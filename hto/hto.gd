@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export (int) var speed = 200
+export (int) var speed = 100
 
 var velocity = Vector2()
 var up = preload("res://hto/tile_0160.png")
@@ -29,3 +29,4 @@ func get_input():
 func _physics_process(delta):
 	get_input()
 	velocity = move_and_slide(velocity)
+
